@@ -4,12 +4,12 @@ end
 
 When(/^I enter a todo$/) do
   input = find('.new-todo')
-  input.set('Write Futuresync slides')
+  input.set('Write Future Sync slides')
   input.native.send_keys(:return)
 end
 
 Then(/^I see my todo in the list$/) do
-  find('.todo-list .todo label', :text => 'Write Futuresync slides')
+  find('.todo-list .todo label', :text => 'Write Future Sync slides')
 end
 
 Given(/^I have (\d+) todo items in the list$/) do |number|
